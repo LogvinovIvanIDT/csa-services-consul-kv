@@ -1,6 +1,6 @@
-AgentInfo: '@SYSHOME@/lib/AgentInfo/AgentInfo'
+AgentInfo: '/usr/local/tomcat/lib/AgentInfo/AgentInfo'
 Paymaster: stuff
-PermissionFile: '@SYSHOME@/lib/CustCarePermissions'
+PermissionFile: '/usr/local/tomcat/lib/CustCarePermissions'
 PinMgmtAdminEmailAddr: =martha.alvarez@idt.net
 PinMgmtDataSourceName: jdbc/PINMgmtAdmin
 PinMgmtRAMQueueOnly: 0
@@ -36,12 +36,12 @@ admin_email: Jessica.Arnold@idt.net
 adv_mapping_max_bulk_qry_dnis_size: 100
 adv_mapping_max_bulk_qry_results: 1200
 allow_debit_promo_credit_days: 30
-audit_spool_dir: '@SYSHOME@/spool/webaudit'
+audit_spool_dir: '/usr/local/tomcat/spool/webaudit'
 b2b_wsdl: https://rc-b2bapi.awsqa.idt.net/b2bsvc.asmx?WSDL
 betaversion: display
 billing_days_to_display: 4
 billing_record_chunk_size: 75
-blacklist_filename: '@SYSHOME@/lib/blackListFile'
+blacklist_filename: '/usr/local/tomcat/lib/blackListFile'
 chghistrpt_debit_reports_main_page_url: '''http://eando.idttechnology.com/cgi-bin/DebitReports'''
 chghistrpt_direct_retrieval_url: '''http://eando.idttechnology.com/cgi-bin/DebitReports/ChgHistoryRpt.${TARGET_DATE}.csv?cmd=showrep&Rep=ChgHistoryRpt.${TARGET_DATE}.csv&Dir=/repmnt/scooter2/misc/'''
 chghistrpt_inception_date: 50113
@@ -85,13 +85,13 @@ customercare:
   documentation:
     url: http://eando.ixtelecom.com/docs/CustomerCare/r1800/customer%20service%20guide.htm
 days_before_archive: 21
-db_config_file: '@SYSHOME@/lib/db.properties'
+db_config_file: '/usr/local/tomcat/lib/db.properties'
 db_driver: oracle.jdbc.driver.OracleDriver
 db_password: admin_debit
 db_url: jdbc:oracle:thin:@pydev5A0.ixtelecom.com:1521:prod
 db_user: debit_admin
 dbadm:
-  cfgdir: '@SYSHOME@/lib/dbadm'
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
 dbadm_pm_remote_shell_path: /usr/bin/ssh
 debit_datasources: Debit
 debit_dbs: pydev58b.ixtelecom.com-prod,pydev58b.ixtelecom.com-prod
@@ -128,13 +128,13 @@ force:
     security:
       question: 'yes'
 free_call_min_duration: 1
-fulfillment_cfg_dir: '@SYSHOME@/lib/fulfillment'
+fulfillment_cfg_dir: '/usr/local/tomcat/lib/fulfillment'
 http_sk_svr_timeout: 5000
 http_sk_svr_url: http://10.252.151.53:8181/xmlreq/sksvr/xml
 http_spud_url: http://10.252.151.53:9988
 http_udp_url: http://lwebdev01.ixtelecom.com:7100/udpRateService
 jmail:
-  cfgdir: '@SYSHOME@/lib/dbadm'
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
 legal_settlement_class: 9999
 legal_sksvr_host: legal.ixtelecom.com
 lookupvalue_reasoncode_param: REASONCODES
@@ -142,13 +142,13 @@ max_autorechg_threshold: 500.0
 max_postpaid_creditlimit: 501.0
 max_rows_per_dniscl_batch_add: 70
 max_trans_amount: 60.0
-menu_path: '@SYSHOME@/lib/'
+menu_path: '/usr/local/tomcat/lib/'
 message_of_the_day_ccfile: custcare_message.txt
-message_of_the_day_dir: '@SYSHOME@/messageOfTheDay'
+message_of_the_day_dir: '/usr/local/tomcat/messageOfTheDay'
 message_of_the_day_pmfile: programmgmt_message.txt
 message_of_the_day_server: webdev01
 migrator:
-  cfgdir: '@SYSHOME@/lib/chargeman'
+  cfgdir: '/usr/local/tomcat/lib/chargeman'
 min_autorechg_threshold: 1.0
 min_postpaid_creditlimit: 1.0
 min_trans_amount: 0.0
@@ -175,7 +175,7 @@ notification_template_voice_mail_pin: BR_MVNO_SEND_VM_PIN
 number_svr_url: http://pydev59c.ixtelecom.com:7001/numberSvrApp/numsvr
 ocm_langmenu: en-US:UsOcmF-BwSecCode,sp-US:SpanishOcm-BwSecCode,fr-US:FrenchCanOcm-BwSecCode
 ocm_url: http://ldev01:8840/OCM/dev
-oracfg: '@SYSHOME@/lib/dbadm/dbadm.properties'
+oracfg: '/usr/local/tomcat/lib/dbadm/dbadm.properties'
 password_expires: 90
 paymaster:
   db:
@@ -212,26 +212,26 @@ pm_send_email_on_update: N
 pspqs_dsprefix: Admin
 pspqs_refresh_interval: 300
 query_promos_back_days: 90
-questionsfile: '@SYSHOME@/lib/questions'
-rate_cmd: /usr/bin/rsh -l ixc pydev58b @SYSHOME@/bin/remoteDbCmd1 @SYSHOME@/bin/webGetRate
-rate_map_file: '@SYSHOME@/lib/rateMap.txt'
-rate_path: '@SYSHOME@/lib/'
+questionsfile: '/usr/local/tomcat/lib/questions'
+rate_cmd: /usr/bin/rsh -l ixc pydev58b /usr/local/tomcat/bin/remoteDbCmd1 /usr/local/tomcat/bin/webGetRate
+rate_map_file: '/usr/local/tomcat/lib/rateMap.txt'
+rate_path: '/usr/local/tomcat/lib/'
 rate_qry_tool_url: http://eando.idttechnology.com/prompts/cgi-bin/RateQuery
-rate_sample_interval_file: '@SYSHOME@/lib/rate_intervals'
+rate_sample_interval_file: '/usr/local/tomcat/lib/rate_intervals'
 rate_svr_name: webRateSvr
 rateplan_svr_url: http://lwebdev01.ixtelecom.com/cgi-bin/PG/simPG.pl
 rateplan_weeklyplan(NightsandWeekends1000BOM): 1.111111111111111E167
 rateplan_weeklyplan(default): 1.111111111111111E167
 rateplan_weeklyplan(longweekend): 1.111111111111111E167
 ratetable_tool_host: lcrswc71
-ratetable_tool_work_rootdir: '@SYSHOME@/lib/work2'
+ratetable_tool_work_rootdir: '/usr/local/tomcat/lib/work2'
 remit:
   debit:
     payercode: 88596
     webservice: http://lwebqa01.ixtelecom.com:7100/remitDebit
   ruleset:
     prefix: rs-PAYERCODES-
-  xlt: '@SYSHOME@/lib/retail.xlt'
+  xlt: '/usr/local/tomcat/lib/retail.xlt'
 remit_mto: MFI
 remittance:
   mto:
@@ -254,7 +254,7 @@ remittance:
             code: 0
     mfi:
       remittance:
-        endpoint: file://@SYSHOME@/apps/Remittance/RemittanceService.wsdl
+        endpoint: file:///usr/local/tomcat/apps/Remittance/RemittanceService.wsdl
         security:
           pin: 4B64CEF1FF9F44128EE64C24114A0BA7
 result_display_max: 500
@@ -268,7 +268,7 @@ settlement_cat2_complete: ''
 settlement_claimant_msg: Test message with DNIS info.
 sk_msgbodybuf_len: 1280
 sp_chargeapp_svr_host: chrgAppSvr@devcent602.ixtelecom.com
-sp_config_file: '@SYSHOME@/lib/socketpool.config'
+sp_config_file: '/usr/local/tomcat/lib/socketpool.config'
 sp_creditrules_svr_host: creditRuleSvr1@10.252.151.53
 sp_custcare_svr_host: distrCC1@10.252.151.53
 sp_imtu_svr_host: qaweb01.ixtelecom.com
@@ -292,12 +292,12 @@ tokenizer:
   url: https://beastqa.idt.net/IDTHandlers/JSHandler/JSScript.ashx?req=tokenizer
 tuyo_dollars_max_redemptions: 5/30
 udp_rates_dir: /idev/users/jargiro/dev/rateTables
-udp_ratetable_rootdir: '@SYSHOME@/lib/UdpRateSvrData/Current'
-unblock_ani_cmd: '@SYSHOME@/bin/ccUnblockAni'
-unblock_ani_logfile: '@SYSHOME@/logs/UnblockAniLog'
+udp_ratetable_rootdir: '/usr/local/tomcat/lib/UdpRateSvrData/Current'
+unblock_ani_cmd: '/usr/local/tomcat/bin/ccUnblockAni'
+unblock_ani_logfile: '/usr/local/tomcat/logs/UnblockAniLog'
 unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:fr-US
 use_nt_login_auth: 'yes'
 voice_mail_admin_parameters: mvnoAdmin/adm!n0/MVNO
 voice_mail_data_languages: English:en-US,Spanish:es-US,French Creole:fr-US
-voice_mail_data_url: http://mvno.net2phone.com/
 wireless_pin_vendor: DataWave
+voice_mail_data_url: http://mvno.net2phone.com/
