@@ -1,1 +1,1 @@
-ConsulKVSync()
+consulKvSync()
