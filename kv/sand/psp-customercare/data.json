@@ -301,3 +301,57 @@ voice_mail_admin_parameters: mvnoAdmin/adm!n0/MVNO
 voice_mail_data_languages: English:en-US,Spanish:es-US,French Creole:fr-US
 wireless_pin_vendor: DataWave
 voice_mail_data_url: http://mvno.net2phone.com/
+# mvno.properties
+BillFinalRestTimeout: 15
+BillFinalRestUrl: 'http://lwebdev02.ixtelecom.com:7100/BrocsApplication-Mvno01/REST/api/v1/BillFinal'
+DATA_MINBAL: 1.5
+DATA_THROTTLE_THRESHOLDS: '4294967296,6442450944,8589934592'
+DbLockWaitMillisecondsTimeout: 1000
+DisableDataThrottlingAction: 'A'
+DisableDataThrottlingSoc: 'DATAFULL'
+DisableSmsAction: 'A'
+DnisReportTypesForMobileAppCellularData: 'adrCD,iosCD'
+EnableDataThrottlingAction: 'A'
+EnableDataThrottlingSoc: 'DATA64K'
+EnableSmsAction: 'D'
+LocalTimezone: 'US/Eastern'
+MINBAL: 0.5
+MvnoNotifyBalanceUpdatedSoapUrl: 'http://lwebdev02.ixtelecom.com:7100/MvnoNotifyBalanceUpdatedApp-Mvno01-tc/soap'
+MvnoUnprocBalanceUpdNotifHndlr:
+NotifWebSvcConnectTimeoutSecs:
+NotifWebSvcRequestTimeoutSecs:
+PRC:
+charge: 500
+cycle: 30
+gracePeriod: 14
+usageThreshold: 4500
+PsfApiServiceSoapUrl: 'http://10.227.1.134:8024/PSF.svc'
+PsfCannedSuccess: 'Y'
+PsfSimulationMode: true
+PsfSocSimulation: true
+PspMvnoUnprocBalanceUpdNotifQ:
+ConnectTimeoutSecs:
+DelaySeconds:
+MaxConnections:
+MaxVisibilityTimeoutSeconds: 3600
+RequestTimeoutSecs:
+PspMvnoUnprocBalanceUpdNotifQName: 'PspMvnoUnprocBalanceUpdNotifs'
+ReadyCreditControlGuid: 'a3595254-2c09-3abd-8ab6-278e6c3e05a7'
+ReadyCreditControlUrl: 'http://lt-dellbg7gg72.am.idtcorp.net:8088/mockOCSServiceV7SoapBinding'
+ReportingCodesForAirtime: 105
+ReportingCodesForILD: 100
+SOC_ACTIONS_4294967296: 'A:DATA128K,D:DATA32K,D:DATA64K'
+SOC_ACTIONS_6442450944: 'A:DATA64K,D:DATA32K,D:DATA128K'
+SOC_ACTIONS_8589934592: 'A:DATA32K,D:DATA128K,D:DATA64K'
+SmsBlockSoc: 'SMSBLK'
+Tier2ZeroRateSms: false
+psfNumber: 8625887299
+simulation:
+account[9734381000]:
+socCount: 2
+soc[0]: 'SMSBLK'
+soc[1]: 'DATAFULL'
+account[9734389999]:
+socCount: 1
+soc[0]: 'DATA64K'
+
