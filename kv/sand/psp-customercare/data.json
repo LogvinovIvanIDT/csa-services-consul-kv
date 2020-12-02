@@ -318,23 +318,23 @@ LocalTimezone: 'US/Eastern'
 MINBAL: 0.5
 MvnoNotifyBalanceUpdatedSoapUrl: 'http://lwebdev02.ixtelecom.com:7100/MvnoNotifyBalanceUpdatedApp-Mvno01-tc/soap'
 MvnoUnprocBalanceUpdNotifHndlr:
-NotifWebSvcConnectTimeoutSecs:
-NotifWebSvcRequestTimeoutSecs:
+  NotifWebSvcConnectTimeoutSecs:
+  NotifWebSvcRequestTimeoutSecs:
 PRC:
-charge: 500
-cycle: 30
-gracePeriod: 14
-usageThreshold: 4500
+  charge: 500
+  cycle: 30
+  gracePeriod: 14
+  usageThreshold: 4500
 PsfApiServiceSoapUrl: 'http://10.227.1.134:8024/PSF.svc'
 PsfCannedSuccess: 'Y'
 PsfSimulationMode: true
 PsfSocSimulation: true
 PspMvnoUnprocBalanceUpdNotifQ:
-ConnectTimeoutSecs:
-DelaySeconds:
-MaxConnections:
-MaxVisibilityTimeoutSeconds: 3600
-RequestTimeoutSecs:
+  ConnectTimeoutSecs:
+  DelaySeconds:
+  MaxConnections:
+  MaxVisibilityTimeoutSeconds: 3600
+  RequestTimeoutSecs:
 PspMvnoUnprocBalanceUpdNotifQName: 'PspMvnoUnprocBalanceUpdNotifs'
 ReadyCreditControlGuid: 'a3595254-2c09-3abd-8ab6-278e6c3e05a7'
 ReadyCreditControlUrl: 'http://lt-dellbg7gg72.am.idtcorp.net:8088/mockOCSServiceV7SoapBinding'
@@ -347,11 +347,10 @@ SmsBlockSoc: 'SMSBLK'
 Tier2ZeroRateSms: false
 psfNumber: 8625887299
 simulation:
-account[9734381000]:
-socCount: 2
-soc[0]: 'SMSBLK'
-soc[1]: 'DATAFULL'
-account[9734389999]:
-socCount: 1
-soc[0]: 'DATA64K'
-
+  account[9734381000]:
+    socCount: 2
+    soc[0]: 'SMSBLK'
+    soc[1]: 'DATAFULL'
+  account[9734389999]:
+    socCount: 1
+    soc[0]: 'DATA64K'
