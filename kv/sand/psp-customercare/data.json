@@ -80,6 +80,17 @@ custcare:
     securityCode: boss_seccode
     securityCode.languages: English:en-US,Spanish:es-US,French Creole:fr-US
     securityCode.prefix: +
+  subscriber:
+    manager:
+      questions:
+        - Who is your favorite musician?
+        - Who is your favorite actor?
+        - Who was your favorite teacher?
+        - Name of favorite sports team?
+        - What is your favorite movie?
+        - What is your favorite country?
+        - What is your favorite color?
+        - What is your favourite color?
 custcare_debug_option: 1
 customercare:
   documentation:
