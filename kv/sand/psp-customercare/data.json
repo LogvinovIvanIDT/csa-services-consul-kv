@@ -1,0 +1,367 @@
+AgentInfo: '/usr/local/tomcat/lib/AgentInfo/AgentInfo'
+Paymaster: stuff
+PermissionFile: '/usr/local/tomcat/lib/CustCarePermissions'
+PinMgmtAdminEmailAddr: =martha.alvarez@idt.net
+PinMgmtDataSourceName: jdbc/PINMgmtAdmin
+PinMgmtRAMQueueOnly: 0
+SpudServiceSoapUrl: http://10.252.151.53:9977
+UnknownTransaction[N,B]: Bounced Check Fee
+UnknownTransaction[N,C]: Deposit Check
+UnknownTransaction[N,D]: Bad Debt
+UnknownTransaction[N,E]: Money Transfer Wire Cancellation
+UnknownTransaction[N,F]: Bounced Check FifthThird
+UnknownTransaction[N,G]: Money Transfer Monthly Commission
+UnknownTransaction[N,H]: Deposit Cash
+UnknownTransaction[N,I]: Kiosk Credit
+UnknownTransaction[N,J]: BR Mobile Activation Spiff
+UnknownTransaction[N,L]: Credit Load
+UnknownTransaction[N,M]: NRS Monthly Fee
+UnknownTransaction[N,N]: NRS Rebate
+UnknownTransaction[N,O]: Kiosk Debit
+UnknownTransaction[N,Q]: Rebate MT
+UnknownTransaction[N,R]: Rebate
+UnknownTransaction[N,T]: Contest
+UnknownTransaction[N,U]: Retailer Refund
+UnknownTransaction[N,W]: Deposit Wire
+UnknownTransaction[N,X]: ARAP Offset
+UnknownTransaction[N,Z]: Rebate DBP
+account_attribute_svc_rest_timeout: 20000
+account_attribute_svc_rest_url: http://10.252.151.53:9299
+account_attribute_svc_rest_url_path:
+  diff_template: /employee-plan/account-diff/@ATTRIBUTE@/@CLASS_ID@
+  export_template: /employee-plan/account-export/@ATTRIBUTE@/@CLASS_ID@
+  optional_export_col_hdrs_template: ?headers=@URL_ENCODED_PIPE_DELIMITED_COLUMN_HEADERS@
+  sync_template: /employee-plan/account-sync/@ATTRIBUTE@/@CLASS_ID@?user=@MODIFIED_BY@
+admin_email: Jessica.Arnold@idt.net
+adv_mapping_max_bulk_qry_dnis_size: 100
+adv_mapping_max_bulk_qry_results: 1200
+allow_debit_promo_credit_days: 30
+audit_spool_dir: '/usr/local/tomcat/spool/webaudit'
+b2b_wsdl: https://rc-b2bapi.awsqa.idt.net/b2bsvc.asmx?WSDL
+betaversion: display
+billing_days_to_display: 4
+billing_record_chunk_size: 75
+blacklist_filename: '/usr/local/tomcat/lib/blackListFile'
+chghistrpt_debit_reports_main_page_url: '''http://eando.idttechnology.com/cgi-bin/DebitReports'''
+chghistrpt_direct_retrieval_url: '''http://eando.idttechnology.com/cgi-bin/DebitReports/ChgHistoryRpt.${TARGET_DATE}.csv?cmd=showrep&Rep=ChgHistoryRpt.${TARGET_DATE}.csv&Dir=/repmnt/scooter2/misc/'''
+chghistrpt_inception_date: 50113
+chghistrpt_max_raw_data_rows: 3000
+chghistrpt_output_dir: /tmp
+country_user_map: United States (US):us_b2b:dXNfYjJi,United Kingdom (UK):b2b_uk:YjJiX3Vr,Singapore
+  (SG):sg_test:c2dfdGVzdA==
+credit_cutoff_hours: 48
+credit_cutoff_hours_mvno: 168
+credit_svr_timeout_ms: 5000
+credit_svr_url: http://lwebdev02.ixtelecom.com:7100/CreditRulesApp-r2000/REST/api/v1/IssueCredit
+creditrules:
+  debit:
+    request:
+      timeout: 10000
+    url: http://10.252.151.53:8181/xmlreq/sksvr/posa
+crs_msgbodybuf_len: 1280
+custcare:
+  employee_acct:
+    attribute_export_col_hdrs(employee): pin|first_name|last_name
+    attribute_list: employee
+    offering_classid_list: 16209
+  sms:
+    DropDSPlan: drop
+    JoinDSPlan: join
+    br_dest_plan_cancel:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_cancel
+    br_dest_plan_join:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_join
+    br_dest_plan_switch:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_switch
+    languages: English:en-US,Spanish:es-US,French Creole:fr-US,German:gr
+    securityCode: boss_seccode
+    securityCode.languages: English:en-US,Spanish:es-US,French Creole:fr-US
+    securityCode.prefix: +
+  subscriber:
+    manager:
+      questions:
+        - Who is your favorite musician?
+        - Who is your favorite actor?
+        - Who was your favorite teacher?
+        - Name of favorite sports team?
+        - What is your favorite movie?
+        - What is your favorite country?
+        - What is your favorite color?
+        - What is your favourite color?
+custcare_debug_option: 1
+customercare:
+  documentation:
+    url: http://eando.ixtelecom.com/docs/CustomerCare/r1800/customer%20service%20guide.htm
+days_before_archive: 21
+db_config_file: '/usr/local/tomcat/lib/db.properties'
+db_driver: oracle.jdbc.driver.OracleDriver
+db_password: admin_debit
+db_url: jdbc:oracle:thin:@pydev5A0.ixtelecom.com:1521:prod
+db_user: debit_admin
+dbadm:
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
+dbadm_pm_remote_shell_path: /usr/bin/ssh
+debit_datasources: Debit
+debit_dbs: pydev58b.ixtelecom.com-prod,pydev58b.ixtelecom.com-prod
+debit_fee_xls_archive_host: ldev01
+debit_fee_xls_archive_host_login: ixc
+debit_fee_xls_archive_rootdir: /fee_tmp
+debit_wsdl: http://localhost:7100/remitDebit-r1330-pmowatt?WSDL
+default_expdate_days_mvno: 1
+dnisinv_ignore_bad_dnistype: Y
+dnisinv_max_import_size: 1000
+dnl_service_timeout: 5000
+dnl_service_url: https://10.252.151.53:8298/v1/dnl
+domain:
+  pdcs: idt:10.4.2.243,idteo:10.130.106.252,idt-uk:10.5.1.18
+dqsvr_url: http://pydev59.ixtelecom.com:8081/cgi-bin/DQSvrReload
+dyndid_config_sendImsg_svcname: dynDidConfigSendImsgDistr
+emms_send_lac_topic: boss_seccode_lac
+emms_send_security_code_languages: English:en-US,Spanish:es-US,French Creole:fr-US
+emms_send_security_code_prefix: +
+emms_send_security_code_topic: boss_seccode
+emms_svr_url: http://10.227.0.43/EMMS/
+expiration_ext_days: 10
+expiration_ext_percent: 25
+expiration_ext_window: 20
+feesratescomborpt_local_rsync_path: /usr/local/bin/rsync
+feesratescomborpt_output_dir(US): /tmp/tc_outdir
+feesratescomborpt_output_host(US): pydev58
+feesratescomborpt_output_host_rsync_path(US): /usr/local/bin/rsync
+feesratescomborpt_ratesvr: qarate1.ixtelecom.com
+feesratescomborpt_ratesvr_rsync_path: /usr/local/bin/rsync
+feesratescomborpt_rsync_rsh_path: /bin/rsh
+force:
+  new:
+    security:
+      question: 'yes'
+free_call_min_duration: 1
+fulfillment_cfg_dir: '/usr/local/tomcat/lib/fulfillment'
+http_sk_svr_timeout: 5000
+http_sk_svr_url: http://10.252.151.53:8181/xmlreq/sksvr/xml
+http_spud_url: http://10.252.151.53:9988
+http_udp_url: http://lwebdev01.ixtelecom.com:7100/udpRateService
+jmail:
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
+legal_settlement_class: 9999
+legal_sksvr_host: legal.ixtelecom.com
+lookupvalue_reasoncode_param: REASONCODES
+max_autorechg_threshold: 500.0
+max_postpaid_creditlimit: 501.0
+max_rows_per_dniscl_batch_add: 70
+max_trans_amount: 60.0
+menu_path: '/usr/local/tomcat/lib/'
+message_of_the_day_ccfile: custcare_message.txt
+message_of_the_day_dir: '/usr/local/tomcat/messageOfTheDay'
+message_of_the_day_pmfile: programmgmt_message.txt
+message_of_the_day_server: webdev01
+migrator:
+  cfgdir: '/usr/local/tomcat/lib/chargeman'
+min_autorechg_threshold: 1.0
+min_postpaid_creditlimit: 1.0
+min_trans_amount: 0.0
+min_wireless_pin_digit_match: 7
+mis_custcare_activation_url: http://10.128.4.32/cgi-bin/miscustcare.cgi
+mis_custcare_url: http://10.128.4.32/cgi-bin/miscustcare.cgi
+mobileapp:
+  rs:
+    exclude_locations: -1
+    ignore:
+      blocked:
+        locations: true
+      undefined_languages: true
+motd_cc: http://pydev59c.ixtelecom.com/motd/motd_cc.html
+motd_general: http://pydev59c.ixtelecom.com/motd/motd_gen.html
+motd_pintools: http://pydev59c.ixtelecom.com/motd/motd_pt.html
+motd_pm: http://pydev59c.ixtelecom.com/motd/motd_pm.html
+mvno_data_rating_type: Rating Group 770, Rating Group 780, Rating Group 790, Rating
+  Group 800, Rating Group 900
+mvno_sms_rating_type: INBOUND SMS, OUTBOUND SMS
+mvno_voice_rating_type: INBOUND CELL, OUTBOUND CELL, OUTBOUND APP, OUTBOUND WIFI
+newRateSvr: multiple
+notification_template_voice_mail_pin: BR_MVNO_SEND_VM_PIN
+number_svr_url: http://pydev59c.ixtelecom.com:7001/numberSvrApp/numsvr
+ocm_langmenu: en-US:UsOcmF-BwSecCode,sp-US:SpanishOcm-BwSecCode,fr-US:FrenchCanOcm-BwSecCode
+ocm_url: http://ldev01:8840/OCM/dev
+oracfg: '/usr/local/tomcat/lib/dbadm/dbadm.properties'
+password_expires: 90
+paymaster:
+  db:
+    name: pydev5a0.ixtelecom.com
+    password: paymaster
+    user: paymaster
+  mno:
+    globePH:
+      connecttimeout: 6000
+      qname:
+        servicename: globe
+        targetnamespace: urn:GCASHWS
+      requesttimeout: 15000
+      security:
+        password: BAR
+        username: FOO
+      url: http://10.130.105.55:8086/mockGlobeGCash
+    test:
+      amount: 10000
+      confirmationid: 123456
+      status: SUCCESS
+      statusmessage: ''
+  mto:
+    mfi:
+      payment:
+        endpoint: http://dev.mfi-corp.com/RMS-API/PaymentService.svc?wsdl
+        security:
+          pin: A38B36625D1A4A3FB671D9910D227697
+  request:
+    lock_interval_seconds: 300
+    max_retry_counts: 10
+    retry_intervals_seconds: 60,60,120,120,300,600
+pm_send_email_on_update: N
+pspqs_dsprefix: Admin
+pspqs_refresh_interval: 300
+query_promos_back_days: 90
+questionsfile: '/usr/local/tomcat/lib/questions'
+rate_cmd: /usr/bin/rsh -l ixc pydev58b /usr/local/tomcat/bin/remoteDbCmd1 /usr/local/tomcat/bin/webGetRate
+rate_map_file: '/usr/local/tomcat/lib/rateMap.txt'
+rate_path: '/usr/local/tomcat/lib/'
+rate_qry_tool_url: http://eando.idttechnology.com/prompts/cgi-bin/RateQuery
+rate_sample_interval_file: '/usr/local/tomcat/lib/rate_intervals'
+rate_svr_name: webRateSvr
+rateplan_svr_url: http://lwebdev01.ixtelecom.com/cgi-bin/PG/simPG.pl
+rateplan_weeklyplan(NightsandWeekends1000BOM): 1.111111111111111E167
+rateplan_weeklyplan(default): 1.111111111111111E167
+rateplan_weeklyplan(longweekend): 1.111111111111111E167
+ratetable_tool_host: lcrswc71
+ratetable_tool_work_rootdir: '/usr/local/tomcat/lib/work2'
+remit:
+  debit:
+    payercode: 88596
+    webservice: http://lwebqa01.ixtelecom.com:7100/remitDebit
+  ruleset:
+    prefix: rs-PAYERCODES-
+  xlt: '/usr/local/tomcat/lib/retail.xlt'
+remit_mto: MFI
+remittance:
+  mto:
+    idt:
+      paymaster:
+        rch:
+          endpoint: http://10.229.131.83:7100/paymasterRCHService
+          payment:
+            type: MWALLET
+          reject:
+            code: 0
+          req:
+            timeout: 15000
+          result:
+            code: 0
+          security:
+            password: hkPassword1
+            user: hkUser1
+          status:
+            code: 0
+    mfi:
+      remittance:
+        endpoint: file:///usr/local/tomcat/apps/Remittance/RemittanceService.wsdl
+        security:
+          pin: 4B64CEF1FF9F44128EE64C24114A0BA7
+result_display_max: 500
+result_display_sizes: 5|25|50|75
+rs:
+  profile_names: mobileapp
+screenpop_script: http://devapp09.ixtelecom.com:7600/PSPScreenPopService/js/jsScreenPop.js
+screenpop_server: devapp09.ixtelecom.com:7600/PSPScreenPopService/
+settlement_cat1_complete: ''
+settlement_cat2_complete: ''
+settlement_claimant_msg: Test message with DNIS info.
+sk_msgbodybuf_len: 1280
+sp_chargeapp_svr_host: chrgAppSvr@devcent602.ixtelecom.com
+sp_config_file: '/usr/local/tomcat/lib/socketpool.config'
+sp_creditrules_svr_host: creditRuleSvr1@10.252.151.53
+sp_custcare_svr_host: distrCC1@10.252.151.53
+sp_imtu_svr_host: qaweb01.ixtelecom.com
+sp_n2p_svr_host: n2p@pydev58b.ixtelecom.com
+sp_posa_svr_host: pydev58b.ixtelecom.com
+sp_remit_svr_host: remit@pydev58b.ixtelecom.com
+sso_appid_cardadmin: 28049
+sso_appid_ccrconfig: 28050
+sso_appid_chargeman: 27246
+sso_appid_custcare: 27242
+sso_appid_eos: 28051
+sso_appid_feesrates: 27456
+sso_appid_hubtransmon: 28047
+sso_appid_imtuconfig: 28048
+sso_appid_pintools: 27454
+sso_appid_progmgmt: 27243
+sso_login_url: http://lwebdev02.ixtelecom.com/sso/cgi-bin/SSODevSimulator.pl
+sso_return_param: redirectTo
+sso_validate_url: http://lwebdev02.ixtelecom.com/sso/cgi-bin/SSODevSimulator.pl
+tokenizer:
+  url: https://beastqa.idt.net/IDTHandlers/JSHandler/JSScript.ashx?req=tokenizer
+tuyo_dollars_max_redemptions: 5/30
+udp_rates_dir: /idev/users/jargiro/dev/rateTables
+udp_ratetable_rootdir: '/usr/local/tomcat/lib/UdpRateSvrData/Current'
+unblock_ani_cmd: '/usr/local/tomcat/bin/ccUnblockAni'
+unblock_ani_logfile: '/usr/local/tomcat/logs/UnblockAniLog'
+unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:fr-US
+use_nt_login_auth: 'yes'
+voice_mail_admin_parameters: mvnoAdmin/adm!n0/MVNO
+voice_mail_data_languages: English:en-US,Spanish:es-US,French Creole:fr-US
+wireless_pin_vendor: DataWave
+voice_mail_data_url: http://mvno.net2phone.com/
+# mvno.properties
+BillFinalRestTimeout: 15
+BillFinalRestUrl: 'http://lwebdev02.ixtelecom.com:7100/BrocsApplication-Mvno01/REST/api/v1/BillFinal'
+DATA_MINBAL: 1.5
+DATA_THROTTLE_THRESHOLDS: '4294967296,6442450944,8589934592'
+DbLockWaitMillisecondsTimeout: 1000
+DisableDataThrottlingAction: 'A'
+DisableDataThrottlingSoc: 'DATAFULL'
+DisableSmsAction: 'A'
+DnisReportTypesForMobileAppCellularData: 'adrCD,iosCD'
+EnableDataThrottlingAction: 'A'
+EnableDataThrottlingSoc: 'DATA64K'
+EnableSmsAction: 'D'
+LocalTimezone: 'US/Eastern'
+MINBAL: 0.5
+MvnoNotifyBalanceUpdatedSoapUrl: 'http://lwebdev02.ixtelecom.com:7100/MvnoNotifyBalanceUpdatedApp-Mvno01-tc/soap'
+MvnoUnprocBalanceUpdNotifHndlr:
+  NotifWebSvcConnectTimeoutSecs:
+  NotifWebSvcRequestTimeoutSecs:
+PRC:
+  charge: 500
+  cycle: 30
+  gracePeriod: 14
+  usageThreshold: 4500
+PsfApiServiceSoapUrl: 'http://10.227.1.134:8024/PSF.svc'
+PsfCannedSuccess: 'Y'
+PsfSimulationMode: true
+PsfSocSimulation: true
+PspMvnoUnprocBalanceUpdNotifQ:
+  ConnectTimeoutSecs:
+  DelaySeconds:
+  MaxConnections:
+  MaxVisibilityTimeoutSeconds: 3600
+  RequestTimeoutSecs:
+PspMvnoUnprocBalanceUpdNotifQName: 'PspMvnoUnprocBalanceUpdNotifs'
+ReadyCreditControlGuid: 'a3595254-2c09-3abd-8ab6-278e6c3e05a7'
+ReadyCreditControlUrl: 'http://lt-dellbg7gg72.am.idtcorp.net:8088/mockOCSServiceV7SoapBinding'
+ReportingCodesForAirtime: 105
+ReportingCodesForILD: 100
+SOC_ACTIONS_4294967296: 'A:DATA128K,D:DATA32K,D:DATA64K'
+SOC_ACTIONS_6442450944: 'A:DATA64K,D:DATA32K,D:DATA128K'
+SOC_ACTIONS_8589934592: 'A:DATA32K,D:DATA128K,D:DATA64K'
+SmsBlockSoc: 'SMSBLK'
+Tier2ZeroRateSms: false
+psfNumber: 8625887299
+simulation:
+  account[9734381000]:
+    socCount: 2
+    soc[0]: 'SMSBLK'
+    soc[1]: 'DATAFULL'
+  account[9734389999]:
+    socCount: 1
+    soc[0]: 'DATA64K'
