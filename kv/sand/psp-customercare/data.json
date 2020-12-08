@@ -91,7 +91,7 @@ custcare:
         - What is your favorite country?
         - What is your favorite color?
         - What is your favourite color?
-  sonfig:
+  config:
     network:
       socket:
         hosts:
