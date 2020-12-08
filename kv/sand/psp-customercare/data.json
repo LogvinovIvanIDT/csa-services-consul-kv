@@ -91,6 +91,93 @@ custcare:
         - What is your favorite country?
         - What is your favorite color?
         - What is your favourite color?
+  sonfig:
+    network:
+      socket:
+        hosts:
+          - hostname: ldev01.ixtelecom.com
+            port: 9992
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: pydev57.ixtelecom.com
+            port: 7001
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: pydev58.ixtelecom.com
+            port: 7001
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: pydev58b.ixtelecom.com
+            port: 8700
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: dbtest7.ixtelecom.com
+            port: 9802
+            maxConnections: 10
+            maxOverflow: 5
+          - hostname: posxx.ixtelecom.com
+            port: 4870
+            maxConnections: 6
+            maxOverflow: 3
+          - hostname: pydev58b.ixtelecom.com
+            port: 2221
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+            tag: n2p
+          - hostname: legal.ixtelecom.com
+            port: 9913
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: devrhe301.ixtelecom.com
+            port: 2501
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: pydev59c.ixtelecom.com
+            port: 8000
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: lgwyqa01.ixtelecom.com
+            port: 9930
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: qaweb01.ixtelecom.com
+            port: 9932
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostname: devcent602.ixtelecom.com
+            port: 9992
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+            tag: distrCC
+          - hostname: devcent602.ixtelecom.com
+            port: 8650
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+            tag: chrgAppSvr
+          - hostname: 10.252.151.53
+            port: 8941
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+            tag: creditRuleSvr1
+          - hostname: 10.252.151.53
+            port: 8992
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+            tag: distrCC1
 custcare_debug_option: 1
 customercare:
   documentation:
