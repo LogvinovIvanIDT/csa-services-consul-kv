@@ -1,3 +1,4 @@
+message: The application was connected to Consul successfully
 spring:
   main:
     banner-mode: off
