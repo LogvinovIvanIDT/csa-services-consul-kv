@@ -91,6 +91,23 @@ custcare:
         - What is your favorite country?
         - What is your favorite color?
         - What is your favourite color?
+  rate:
+    intervals:
+        - 2f
+        - 3f
+        - 5f
+        - 6.75f
+        - 7f
+        - 10f
+        - 13.5f
+        - 14f
+        - 20f
+        - 25f
+        - 27f
+        - 28f
+        - 50f
+        - 100f
+        - 1005f
   config:
     network:
       socket:
