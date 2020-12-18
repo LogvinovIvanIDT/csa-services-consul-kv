@@ -79,59 +79,59 @@ custcare:
       - 50f
       - 100f
       - 1005f
-    config:
-      network:
-        socket:
-          hosts:
-            - hostName: qaivrdb02.ixtelecom.com
-              port: 7001
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 60
-            - hostName: tstlbcc.ixtelecom.com
-              port: 9902
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-            - hostName: tstlbch.ixtelecom.com
-              port: 9905
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-            - hostName: awselbqadebit1.idt.net
-              port: 9922
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-              tag: credrule
-            - hostName: awselbqadebit1.idt.net
-              port: 9912
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-              tag: custcare
-            - hostName: awselbqadebit1.idt.net
-              port: 9905
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-              tag: chargeapp
-            - hostName: qaivrdb01.ixtelecom.com
-              port: 7001
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-            - hostName: tstlbls.ixtelecom.com
-              port: 9914
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-            - hostName: lqaimtu01.ixtelecom.com
-              port: 9933
-              maxConnections: 10
-              maxOverflow: 5
-              maxIdleTime: 20
-              custcare_debug_option: 0
+  config:
+    network:
+      socket:
+        hosts:
+          - hostName: qaivrdb02.ixtelecom.com
+            port: 7001
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 60
+          - hostName: tstlbcc.ixtelecom.com
+            port: 9902
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+          - hostName: tstlbch.ixtelecom.com
+            port: 9905
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+          - hostName: awselbqadebit1.idt.net
+            port: 9922
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+            tag: credrule
+          - hostName: awselbqadebit1.idt.net
+            port: 9912
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+            tag: custcare
+          - hostName: awselbqadebit1.idt.net
+            port: 9905
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+            tag: chargeapp
+          - hostName: qaivrdb01.ixtelecom.com
+            port: 7001
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+          - hostName: tstlbls.ixtelecom.com
+            port: 9914
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+          - hostName: lqaimtu01.ixtelecom.com
+            port: 9933
+            maxConnections: 10
+            maxOverflow: 5
+            maxIdleTime: 20
+            custcare_debug_option: 0
 customercare:
   documentation:
     url: http://eando.ixtelecom.com/docs/CustomerCare/r1800/customer%20service%20guide.htm
