@@ -1,0 +1,316 @@
+14072_unlimited_msg_langs: English:en-US,French Creole:fr-US,Spanish:es-US,Amharic:am-AM
+16205_emms_product: brmobile
+16205_emms_send_security_code_topic: boss_seccode_mvno
+31060_unlimited_msg_langs: German:de-DE
+76000_unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:fr-US,Bahasa:bh-HK
+AgentInfo: '/usr/local/tomcat/lib/AgentInfo/AgentInfo'
+PermissionFile: '/usr/local/tomcat/lib/CustCarePermissions_test'
+SpudServiceSoapUrl: http://awselbqadebit9901-9950.idt.net:9941
+UnknownTransaction[y,y]: this is a new type of transaction
+account_attribute_svc_rest_timeout: 20000
+account_attribute_svc_rest_url: https://employee-plan.awsqa.idt.net
+account_attribute_svc_rest_url_path:
+  diff_template: /employee-plan/account-diff/@ATTRIBUTE@/@CLASS_ID@
+  export_template: /employee-plan/account-export/@ATTRIBUTE@/@CLASS_ID@
+  optional_export_col_hdrs_template: ?headers=@URL_ENCODED_PIPE_DELIMITED_COLUMN_HEADERS@
+  sync_template: /employee-plan/account-sync/@ATTRIBUTE@/@CLASS_ID@?user=@MODIFIED_BY@
+admin_email: poonam.mittal@idt.net
+audit_spool_dir: '/usr/local/tomcat/spool/webaudit'
+b2b_wsdl: https://rc-b2bapi.awsqa.idt.net/b2bsvc.asmx?WSDL
+betaversion: display
+billing_days_to_display: 30
+billing_record_chunk_size: 75
+blacklist_filename: '/usr/local/tomcat/lib/blackListFile'
+country_user_map: United States (US):us_b2b:dXNfYjJi,United Kingdom (UK):b2b_uk:YjJiX3Vr,Singapore (SG):sg_test:c2dfdGVzdA==,Error Testing (US):us_b2b:abcdefg,Invalid User (US):abcd:efgh
+credit_cutoff_hours: 48
+credit_cutoff_hours_mvno: 468
+credit_svr_timeout_ms: 5000
+credit_svr_url: http://awselbqamvnobrocs2.idt.net/CreditRulesApp/REST/api/v1/IssueCredit
+crs_msgbodybuf_len: 1280
+custcare:
+  cctrans:
+    query: update
+  employee_acct:
+    attribute_export_col_hdrs(employee): pin|first_name|last_name
+    attribute_list: employee,PM-employee,Promotion_account,Test_account
+    offering_classid_list: 16209
+  sms:
+    br_dest_plan_cancel:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_cancel
+    br_dest_plan_join:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_join
+    br_dest_plan_switch:
+      languages: English:en-US,Spanish:es-US
+      topic: br_dest_plan_switch
+  fulfillment:
+    14072:
+      html: html.xsl
+      text: text.xsl
+      email: support@bossrevolution.com
+      attachment_0: logo.jpe
+    directory: /usr/local/tomcat/lib/fulfillment
+  subscriber:
+    manager:
+      questions:
+        - Who is your favorite musician?
+        - Who is your favorite actor?
+        - Who was your favorite teacher?
+        - Name of favorite sports team?
+        - What is your favorite movie?
+        - What is your favorite country?
+        - What is your favorite color?
+        - What is your favourite color?
+  rate:
+    intervals:
+      - 2f
+      - 3f
+      - 5f
+      - 6.75f
+      - 7f
+      - 10f
+      - 13.5f
+      - 14f
+      - 20f
+      - 25f
+      - 27f
+      - 28f
+      - 50f
+      - 100f
+      - 1005f
+      config:
+    config:
+      network:
+        socket:
+          hosts:
+            - hostName: qaivrdb02.ixtelecom.com
+              port: 7001
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 60
+            - hostName: tstlbcc.ixtelecom.com
+              port: 9902
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+            - hostName: tstlbch.ixtelecom.com
+              port: 9905
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+            - hostName: awselbqadebit1.idt.net
+              port: 9922
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+              tag: credrule
+            - hostName: awselbqadebit1.idt.net
+              port: 9912
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+              tag: custcare
+            - hostName: awselbqadebit1.idt.net
+              port: 9905
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+              tag: chargeapp
+            - hostName: qaivrdb01.ixtelecom.com
+              port: 7001
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+            - hostName: tstlbls.ixtelecom.com
+              port: 9914
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+            - hostName: lqaimtu01.ixtelecom.com
+              port: 9933
+              maxConnections: 10
+              maxOverflow: 5
+              maxIdleTime: 20
+              custcare_debug_option: 0
+customercare:
+  documentation:
+    url: http://eando.ixtelecom.com/docs/CustomerCare/r1800/customer%20service%20guide.htm
+db_config_file: '/usr/local/tomcat/lib/db.properties'
+db_driver: oracle.jdbc.driver.OracleDriver
+db_password: admin_debit
+db_url: jdbc:oracle:thin:@qaadmin02.ixtelecom.com:1521:prod
+db_user: debit_admin
+dbadm:
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
+dbadm_pm_remote_shell_path: /usr/bin/ssh
+debit_datasources: Debit
+debit_dbs_archive: qaadmin04.ixtelecom.com-prod
+debit_fee_xls_archive_host: qaadmin01
+debit_fee_xls_archive_rootdir: /tmp/ARCHIVE
+dnl_service_timeout: 5000
+dnl_service_url: https://dnl.awsqa.idt.net:19501/v1/dnl
+emms_product: br
+emms_send_lac_topic: boss_seccode_lac
+emms_send_security_code_languages: English:en-US,Spanish:es-US,French Creole:fr-US,Bahasa:bh-HK
+emms_send_security_code_prefix: '+ '
+emms_send_security_code_topic: boss_seccode
+emms_svr_url: http://emmsserviceqa.idt.net/EMMS
+encrypt_credit_card: true
+expiration_ext_days: 10
+expiration_ext_percent: 25
+expiration_ext_window: 20
+first:
+  autorecharge:
+force:
+  new:
+    security:
+      question: 'yes'
+from_email: william.hoch@idt.net
+fulfillment_cfg_dir: '/usr/local/tomcat/lib/fulfillment'
+http_sk_svr_timeout: =5000
+http_sk_svr_url: http://awselbqadebit1.idt.net:9945/xmlreq/debitSkSvrXML
+http_spud_url: http://awselbqadebit9901-9950.idt.net:9940
+http_udp_url: http://lrateqa01.ixtelecom.com:8080/udpRateService
+idt_screen_pop_service_url: https://psp-screenpop-service.awsqa.idt.net/screenpop/v1/calldata/did/{did}/ani/{ani}
+jmail:
+  cfgdir: '/usr/local/tomcat/lib/dbadm'
+l####################################################: ''
+legal_sksvr_host: tstlbls.ixtelecom.com
+logon_bypass: 0
+logon_bypass_passwd: fr33r1d3!
+logon_bypass_user: bypass
+lookupvalue_reasoncode_param: REASONCODES
+max_autorechg_threshold: 500.0
+max_display_entries: 2000
+max_postpaid_creditlimit: 200.0
+max_trans_amount: 60.0
+max_wireless_pin_length: 13
+menu_path: '/usr/local/tomcat/lib/'
+min_autorechg_threshold: 0.01
+min_postpaid_creditlimit: 1.0
+min_trans_amount: 1.0
+min_wireless_pin_digit_match: 4
+min_wireless_pin_length: 7
+mis_custcare_activation_url: http://nwk-mvno-webqa1/MVNO/custcare/GetSubscriberStatus.aspx
+mis_custcare_url: http://nwk-mvno-webqa1/MVNO/custcare/GetSubscriberStatus.aspx
+mobileapp:
+  rs:
+    exclude_locations: -1,-190839342
+    override:
+      location:
+        country: 92:PN:0,91:IN:1
+modt_general: http://eando.idttechnology.com/motd/motd_general.html
+motd_cc: http://eando.idttechnology.com/motd/motd_cc.html
+motd_general: http://eando.idttechnology.com/motd/motd_general.html
+motd_pintools: http://eando.idttechnology.com/motd/motd_prov.html
+motd_pm: http://eando.idttechnology.com/motd/motd_pm.html
+mvno_data_rating_type: Rating Group 770, Rating Group 780, Rating Group 790, Rating Group 900
+mvno_sms_rating_type: INBOUND SMS, OUTBOUND SMS
+mvno_voice_rating_type: INBOUND CELL, INBOUND APP, INBOUND_WIFI, OUTBOUND CELL, OUTBOUND APP, OUTBOUND WIFI
+newRateSvr: multiple
+notification_template_voice_mail_pin: BR_MVNO_SEND_VM_PIN
+number_svr_url: http://qaweb03.ixtelecom.com/numberSvrApp/numsvr
+ocm_langmenu: en-US:UsOcmF-EngBwSecCode,es-US:SpanishOcm-SpnBwSecCode,fr-US:FrenchCanOcm-EngBwSecCode
+ocm_url: http://lgwyqa01.ixtelecom.com:9871/OCM/BossRevCustCare
+oracfg: '/usr/local/tomcat/lib/dbadm/dbadm.properties'
+posa_wireless_pin_retrieval_delay: 8000
+query_promos_back_days: 30
+questionsfile: '/usr/local/tomcat/lib/questions'
+rate_cmd: rsh testsw58 /usr/local/tomcat/bin/remoteDbCmd1 /usr/local/tomcat/bin/webGetRate
+rate_map_file: '/usr/local/tomcat/lib/rateMap_test.txt'
+rate_path: '/usr/local/tomcat/lib/'
+rate_qry_tool_url: http://qaweb01.ixtelecom.com/cgi-bin/RateQuery
+rate_sample_interval_file: '/usr/local/tomcat/lib/rate_intervals'
+rate_svr_name: webRateSvr
+rateplan_svr_url: http://10.130.149.85/MVNO/MVNOService.asmx
+rc_import_max_record: 100
+rc_import_max_sheets: 20
+remit_mto: MFI
+remit_refresh_interval: 10
+remittance:
+  mto:
+    mfi:
+      remittance:
+        endpoint: http://devcall02.ixtelecom.com/Remittance/QARemittanceService.wsdl
+        security:
+          pin: 1111222233334444
+  receipt:
+    addlInfo:
+      url: www.idtsend.com
+    custcare:
+      phone: 18778565732
+    info:
+      california: TBD<br/><br/>If you are a resident of the state of California the following applies and supersede any other conflicting<br/>terms and conditions in this Agreement:<br/><br/>RIGHT TO REFUND:You,the customer are entitled to a refund of the money to be transmitted as the<br/>result of this agreement if MFIC does not forward the funds received within 10 days of the date of its<br/>receipt, or does not give instructions committing an equivalent amount of funds to the person designated by<br/>you within 10 days of the date of receipt of the funds from you unless otherwise instructed by you.<br/><br/>If your instructions as to when the funds shall be forwarded or transmitted are not compiled with and the<br/>funds have not been forwarded or transmitted you have a right to a refund.<br/><br/>
+      colorado: 'TBD<br/><br/>Entities other than FDIC-insured financial institutions
+                that conduct money transmission activities in<br/>Colorado,including
+                the sale of money orders,transfer of funds,and other instruments for
+                the payment of<br/>money or credit are required to be licensed by
+                the Colorado Division of Banking pursuant to the Money<br/>Transmitters
+                Act, Title 12,Article 52,Colorado Revised Statutes.If there are questions
+                or concerns<br/>regarding a transaction with a license,please contact
+                the Colorado Division of Banking at 303-894-7575 or<br/>by mail at:
+                Colorado Division of Banking, 1560 Broadway, Suite 975, Denver, Colorado
+                80208.'
+      delaware: the Delaware Office of the State bank Commissioner at <u>http://banking.delaware.gov</u>.
+      districtofcolumbia: or the District of Columbia Department of Insurance, Securities & Banking at <u>www.disb.dc.gov</u>.
+      maryland: 'TBD<br/><br/>The Commissioner of Financial Regulation for the
+                State of Maryland will accept questions or complaints<br/>from Maryland
+                residents regarding MFIC at: Commissioner of Financial Regulation,
+                Attention Complaint<br/>Unit,500 North Calvert Street, Suite 402,
+                Baltimore, Maryland 21202, toll-free telephone number:1-888-<br/>784-0134.'
+      newjersey: the Department of Banking at <u>www.state.nj.us/dobi</u>.
+      texas: TBD<br/><br/>After first contacting MFIC,if you are a Texas resident and you still have an unresolved complaint<br/>regarding our money transfer service, please direct your complaint to:Texas Department of Banking;2601<br/>North Lamar Boulevard; Austin, TX 78705; 1-877-276-5554 (toll free);http://www.banking.state.tx.us.
+      virginia: the Virginia Bureau of Financial Institutions at <u>www.scc.virginia.gov</u>.
+    smsGateway:
+      host: qaivrdb02.ixtelecom.com
+      name: default
+      port: 8689
+result_display_max: 500
+result_display_sizes: 25|50|75
+rs:
+  profile_names: mobileapp
+  show:
+    inplan:
+      currency: 'no'
+screenpop_script: http://qaapp11.ixtelecom.com:7500/PSPScreenPopService/js/jsScreenPop.js
+screenpop_server: qaapp11.ixtelecom.com:7500/PSPScreenPopService/
+scrpops_bypass_option: 'yes'
+scrpops_config_file: \\\\nwk-fs1a\\idtshare\\DebitPopTest.xml
+settlement_cat1_complete: ''
+settlement_cat2_complete: ''
+settlement_claimant_msg: ''
+sk_msgbodybuf_len: 1280
+sp_chargeapp_svr_host: chargeapp@awselbqadebit1.idt.net
+sp_config_file: '/usr/local/tomcat/lib/socketpool.config'
+sp_creditrules_svr_host: credrule@awselbqadebit1.idt.net
+sp_custcare_svr_host: custcare@awselbqadebit1.idt.net
+sp_imtu_svr_host: lqaimtu01.ixtelecom.com
+sp_n2p_svr_host: ldistqa01.ixtelecom.com
+sp_posa_svr_host: posxx.ixtelecom.com
+sp_remit_svr_host: remit@qadist1lb.ixtelecom.com
+sso_appid_cardadmin: 30094
+sso_appid_ccrconfig: 30314
+sso_appid_chargeman: 27246
+sso_appid_custcare: 27242
+sso_appid_feesrates: 27456
+sso_appid_hubtransmon: 28047
+sso_appid_imtuconfig: 29118
+sso_appid_pintools: 27454
+sso_appid_progmgmt: 27243
+sso_login_url: https://qa1.web.idt.net/mis/sso
+sso_return_param: ReturnURL
+sso_use_https_app_url: false
+sso_validate_url: http://qa1.web.idt.net/mis/security/appsecws/sso/SSOService.svc/tokens
+subpoena_query_batch_size: 200
+tokenizer:
+  url: https://beastqa.idt.net/IDTHandlers/JSHandler/JSScript.ashx?req=tokenizer
+tuyo_dollars_max_redemptions: 5/30
+unblock_ani_cmd: '/usr/local/tomcat/bin/ccUnblockAni'
+unblock_ani_logfile: '/usr/local/tomcat/logs/UnblockAniLog'
+unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:fr-US
+voice_mail_admin_parameters: mvnoAdmin/adm!n0/MVNO
+voice_mail_data_languages: 'English:en-US,Spanish:es-US,French Creole:fr-US # for
+    all mvno classes'
+voice_mail_data_url: http://mvno.net2phone.com/
+wireless_pin_vendor: Datawave
