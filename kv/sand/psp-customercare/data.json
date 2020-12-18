@@ -469,3 +469,237 @@ simulation:
   account[9734389999]:
     socCount: 1
     soc[0]: 'DATA64K'
+# JMail.properties
+AniDestinationSurchargeAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+AniDestinationSurchargeDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+AniDestinationSurchargeUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+AniSurchargeCreditAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+AniSurchargeCreditDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+AniSurchargeCreditUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+BalanceDeductionRulesAdded:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added Balance Deduction Rules for {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+BalanceDeductionRulesDeleted:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted All Balance Deduction Rules for {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+BalanceDeductionRulesUpdated:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Balance Deduction Rules for {0}  by User {1}'
+  To: 'undefined@ixtelecom.com'
+CcRespActionAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}'
+  To: 'nhona@ixtelecom.com'
+CcRespActionDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}'
+  To: 'nhona@ixtelecom.com'
+CcRespActionUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}'
+  To: 'nhona@ixtelecom.com'
+ClassGroupDataAdded:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added Class Group member {0}(groupid/classid) by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassGroupDataDeleted:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted Class Group member {0} (groupid/classid) by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassGroupDataUpdated:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Class Group member {0} (groupid/classid) by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassGroupInfoAdded:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added Class Group {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassGroupInfoDeleted:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted Class Group {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassGroupInfoUpdated:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Class Group {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+ClassUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Class {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DenomDefAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added DenomDef for {0}/{1} (Id/Denom) by User {2}'
+  To: 'nhona@ixtelecom.com'
+DenomDefDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program MlanceDeductionRulesAdded.To=undefined@ixtelecom.com'
+  Subject: 'Deleted DenomDef for {0}/{1} (Id/Denom) by User {2}'
+  To: 'nhona@ixtelecom.com'
+DenomDefUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated DenomDef for {0}/{1} (Id/Denom) by User {2}'
+  To: 'nhona@ixtelecom.com'
+DestBasedFeesUploaded:
+  FromAddress: 'sriechen@ixtelecom.com'
+  FromName: 'ProgramManagement'
+  Subject: 'Uploaded dest based {0} fees for {1} by User {2}'
+  To: 'nhona@ixtelecom.com'
+DnisClassAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added DNIS/Class {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisClassDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted DNIS/Class {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisClassUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated DNIS/Class {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisInventoryBatchDeleted:
+  FromAddress: 'sreichen@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Successfully Deleted {0} DNIS(es) from DNIS Inventory Partition ({1}) by User {2} {3}'
+  To: 'undefine@ixtelecom.com'
+DnisInventoryImported:
+  FromAddress: 'sreichen@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Successfully Imported {0} DNIS(es) to DNIS Inventory Partition ({1}) by User {2}.'
+  To: 'undefine@ixtelecom.com'
+DnisInventoryUpdated:
+  FromAddress: 'sreichen@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Dnis Inventory Record for {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisSurchargeAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added Dnis Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisSurchargeDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted Dnis Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisSurchargeUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated Dnis Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+DnisUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated DNIS {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+NewClassAdded:
+  FromAddress: 'something@ixtelecom.com'
+  FromName: 'Amol M.'
+  Subject: 'New Class cid {0} Added'
+  To: 'sreichen@ixtelecom.com,bhoch@ixtelecom.com,nhona@ixtelecom.com'
+PaymasterAlert:
+  FromAddress: 'compliance@idt.net'
+  FromName: 'Paymaster Compliance'
+  Subject: '{0} alert for {1} ({2})'
+  To: 'william.hoch@idt.net,jennifer.sillito@idt.net'
+PaymasterLowBalanceAlert:
+  FromAddress: 'rch.notifications@idt.net'
+  FromName: 'Remittance Clearing House'
+  Subject: 'Low balance alert for {0} {1}'
+  To: 'ki-wang.ho@idt.net,michael.chin@idt.net,jack.doyle@idt.net,carlo.pena@idt.net,dennis.darienzo@idt.net,paul.mowatt@idt.net'
+PayphoneSurchargeAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added {2} Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+PayphoneSurchargeDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted {2} Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+PayphoneSurchargeUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated {2} Surcharge for DNIS/First Interval/Subs Interval {0} by User {1}'
+  To: 'undefined@ixtelecom.com'
+PrsDidActivated:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Activated PRS DID {0} (DID/Dialed DID/Class) by user {1}'
+  To: 'shirisav@idttechnology.com,sreichen@idttechnology.com'
+PrsDidDisconnected:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Disconnected PRS DID {0} (DID/Dialed DID/Class) by user {1}'
+  To: 'shirisav@idttechnology.com,sreichen@idttechnology.com'
+PrsDidUpdated:
+  FromAddress: 'app-ops@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated PRS DID {0} (DID/Dialed DID/Class) by user {1}'
+  To: 'shirisav@idttechnology.com,sreichen@idttechnology.com'
+RechgPolicyDefAdded:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Added RechgPolicyDef {0} by User {1}'
+  To: 'nhona@ixtelecom.com'
+RechgPolicyDefDeleted:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Deleted RechgPolicyDef {0} by User {1}'
+  To: 'nhona@ixtelecom.com'
+RechgPolicyDefUpdated:
+  FromAddress: 'amol@ixtelecom.com'
+  FromName: 'Program Management'
+  Subject: 'Updated RechgPolicyDef {0} by User {1}'
+  To: 'nhona@ixtelecom.com'
+RemittanceReceipt:
+  FromAddress: 'carolyn.whelan@idt.net'
+  FromName: 'carolyn'
+  Subject: 'Remittance Receipt'
+  To: 'carolyn.whelan@idt.net'
+mail:
+  smtp:
+    host: 'mailhub.ixtelecom.com'
