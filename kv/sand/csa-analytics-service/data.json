@@ -11,6 +11,6 @@ customer:
       indicator:
         job:
           initial:
-            delay: 50000
+            delay: 900000
           fixed:
             rate: 1800000
