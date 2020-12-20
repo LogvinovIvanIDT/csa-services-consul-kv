@@ -62,6 +62,7 @@ custcare:
         - 'What is your favorite country?'
         - 'What is your favorite color?'
         - 'What is your favourite color?'
+        - 'What is your favourite ice hockey club?'
   rate:
     intervals:
       - 2f
