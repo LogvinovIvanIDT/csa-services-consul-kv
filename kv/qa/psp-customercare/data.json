@@ -360,12 +360,12 @@ simulation:
       name: 'DATA ONNET 3G 256K - 4G 256K'
       type: 'scode'
     soc[3]:
-      code: 'DATA32K
+      code: 'DATA32K'
       desc: 'Carrier - IDT Sprint DATA ONNET 3G 32K âG 32K'
       name: 'DATA ONNET 3G 32K âG 32K'
       type: 'scode'
     soc[4]:
-      code: 'DATA3GFULL
+      code: 'DATA3GFULL'
       desc: 'Carrier - IDT Sprint DATA ONNET 3G OPEN - 4G 512K'
       name: 'DATA ONNET 3G OPEN - 4G 512K'
       type: 'scode'
