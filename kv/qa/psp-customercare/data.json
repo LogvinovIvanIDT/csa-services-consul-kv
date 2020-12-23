@@ -162,6 +162,8 @@ expiration_ext_percent: 25
 expiration_ext_window: 20
 first:
   autorecharge:
+       campaign:
+          14072: 5000132
 force:
   new:
     security:
