@@ -31,7 +31,7 @@ custcare:
   cctrans:
     query: update
   employee_acct:
-    attribute_export_col_hdrs(employee): pin|first_name|last_name
+    attribute_export_col_hdrs(employee): pin|first_name|last_name|active
     attribute_list: employee,PM-employee,Promotion_account,Test_account
     offering_classid_list: 16209
   sms:
