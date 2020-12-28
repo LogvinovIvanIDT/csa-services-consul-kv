@@ -1,4 +1,4 @@
-message: The application was connected to Consul successfully
+csa.analytics.service.consul.health.message: The application was connected to Consul successfully
 best:
   offer:
     job:
