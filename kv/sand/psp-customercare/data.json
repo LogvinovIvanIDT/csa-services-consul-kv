@@ -703,3 +703,9 @@ RemittanceReceipt:
 mail:
   smtp:
     host: 'mailhub.ixtelecom.com'
+
+csa:
+  cors:
+    allowed:
+      origins:
+        - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
