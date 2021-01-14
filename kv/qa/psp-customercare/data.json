@@ -639,3 +639,4 @@ csa:
     allowed:
       origins:
         - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
+        - 'http://localhost:3000'
