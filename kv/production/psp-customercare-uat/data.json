@@ -768,5 +768,5 @@ csa:
     allowed:
       origins:
         - 'http://rc-custcare.idt.net'
-        - 'http://localhost:3000'
+        - 'http://rc-customercare.idt.net'
 
