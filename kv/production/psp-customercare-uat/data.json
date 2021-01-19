@@ -108,88 +108,88 @@ custcare:
         network:
             socket:
                 hosts:
-                    - hostname: pyrmtsmsgway
+                    - hostName: pyrmtsmsgway
                       port: 8770
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 60
-                    - hostname: brdrmtsmsgway
+                    - hostName: brdrmtsmsgway
                       port: 8770
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 60
-                    - hostname: awselbprodchrgapps.idt.net
+                    - hostName: awselbprodchrgapps.idt.net
                       port: 9905
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: chrgapp
-                    - hostname: awselbprodsksvrxml.idt.net
+                    - hostName: awselbprodsksvrxml.idt.net
                       port: 9908
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: custcare
-                    - hostname: awselbprodsksvrxml.idt.net
+                    - hostName: awselbprodsksvrxml.idt.net
                       port: 9912
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: n2p
-                    - hostname: awselbprodcredrules.idt.net
+                    - hostName: awselbprodcredrules.idt.net
                       port: 9922
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: credrules
-                    - hostname: db01_sktest.debit.idt.net
+                    - hostName: db01_sktest.debit.idt.net
                       port: 9075
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: custcare
-                    - hostname: db01_chrgapptest.debit.idt.net
+                    - hostName: db01_chrgapptest.debit.idt.net
                       port: 6513
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: chrgapp
-                    - hostname: imtu.ixtelecom.com
+                    - hostName: imtu.ixtelecom.com
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
-                    - hostname: somgwy01.debit.idt.net
-                      port: 2500
-                      maxConnections: 10
-                      maxOverflow: 5
-                      maxIdelTime: 20
-                      tag: imtu
-                    - hostname: gateway.debit.idt.net
+                    - hostName: somgwy01.debit.idt.net
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: imtu
-                    - hostname: gwy.debit.idt.net
+                    - hostName: gateway.debit.idt.net
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: imtu
-                    - hostname: halgwy01.debit.idt.net
+                    - hostName: gwy.debit.idt.net
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: imtu
-                    - hostname: gatewayb.debit.idt.net
+                    - hostName: halgwy01.debit.idt.net
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
                       maxIdelTime: 20
                       tag: imtu
-                    - hostname: gwyb.debit.idt.net
+                    - hostName: gatewayb.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostName: gwyb.debit.idt.net
                       port: 2500
                       maxConnections: 10
                       maxOverflow: 5
