@@ -1,0 +1,772 @@
+14072_unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:ht-US,French:fr-US,Arabic:ar-US
+16205_emms_product: brmobile
+22690_unlimited_msg_langs: English:en-GB,Spanish:es-GB
+31000_unlimited_msg_langs: Spanish:es-ES
+31060_unlimited_msg_langs: English:en-DE,German:de-DE
+6189_unlimited_msg_langs: English:en-HK
+6258_unlimited_msg_langs: English:en-SG
+6270_unlimited_msg_langs: English:en-AU
+SpudServiceSoapUrl: http://mvnospud.debit.idt.net:9941
+UnknownTransaction[N,B]: Bounced Check Fee
+UnknownTransaction[N,C]: Deposit Check
+UnknownTransaction[N,D]: Bad Debt
+UnknownTransaction[N,E]: Money Transfer Wire Cancellation
+UnknownTransaction[N,F]: Bounced Check FifthThird
+UnknownTransaction[N,G]: Money Transfer Monthly Conditions
+UnknownTransaction[N,H]: Deposit Cash
+UnknownTransaction[N,I]: Kiosk Credit
+UnknownTransaction[N,J]: BR Mobile Activation Spiff
+UnknownTransaction[N,L]: Credit Load
+UnknownTransaction[N,M]: NRS Monthly Fee
+UnknownTransaction[N,N]: NRS Rebate
+UnknownTransaction[N,O]: Kiosk Debit
+UnknownTransaction[N,Q]: Rebate MT
+UnknownTransaction[N,R]: Rebate
+UnknownTransaction[N,T]: Contest
+UnknownTransaction[N,U]: Retailer Refund
+UnknownTransaction[N,W]: Deposit Wire
+UnknownTransaction[N,X]: ARAP Offset
+UnknownTransaction[N,Z]: Rebate DBP
+account_attribute_svc_rest_url: https://employee-plan-uat.aws.idt.net
+account_attribute_svc_rest_url_path:
+    diff_template: /employee-plan/account-diff/@ATTRIBUTE@/@CLASS_ID@
+    export_template: /employee-plan/account-export/@ATTRIBUTE@/@CLASS_ID@
+    optional_export_col_hdrs_template: ?headers=@URL_ENCODED_PIPE_DELIMITED_COLUMN_HEADERS@
+    sync_template: /employee-plan/account-sync/@ATTRIBUTE@/@CLASS_ID@?user=@MODIFIED_BY@
+admin_email: jessica.arnold@idt.net
+adv_mapping_max_bulk_qry_dnis_size: 100
+adv_mapping_max_bulk_qry_results: 1200
+audit_spool_dir: '/usr/local/tomcat/spool/webaudit'
+b2b_wsdl: https://rc-b2bapi.aws.idt.net/b2bsvc.asmx?WSDL
+billing_days_to_display: 14
+billing_record_chunk_size: 75
+blacklist_filename: '/usr/local/tomcat/lib/blackListFile'
+country_user_map: United States (US):custcare2-c-us:Y3VzdDM4OWNhMzdyZQ==,Canada (CA):custcare-c-ca:Y3VzdDM4OWNhMzdyZQ==
+credit_cutoff_hours: 48
+credit_cutoff_hours_mvno: 168
+credit_svr_timeout_ms: 5000
+credit_svr_url: http://awselbmvnobrocs.idt.net/CreditRulesApp/REST/api/v1/IssueCredit
+custcare:
+    employee_acct:
+        attribute_export_col_hdrs(employee): pin|first_name|last_name|active
+        attribute_list: employee,promotion_account,test_account
+        offering_classid_list: 16209
+    sms:
+        br_dest_plan_cancel:
+            languages: English:en-US,Spanish:es-US,French Creole:ht-US,French:fr-US,Arabic:ar-US
+            topic: br_dest_plan_cancel
+        br_dest_plan_join:
+            languages: English:en-US,Spanish:es-US,French Creole:ht-US,French:fr-US,Arabic:ar-US
+            topic: br_dest_plan_join
+        br_dest_plan_switch:
+            languages: English:en-US,Spanish:es-US,French Creole:ht-US,French:fr-US,Arabic:ar-US
+            topic: br_dest_plan_switch
+    fulfillment:
+        14072:
+            html: html.xsl
+            text: text.xsl
+            email: support@bossrevolution.com
+            attachment_0: logo.jpe
+        14405:
+            html: html.xsl
+            text: text.xsl
+            email: support@bossrevolution.com
+            attachment_0: logo.jpe
+    subscriber:
+        manager:
+            questions:
+                - 'Who is your favorite musician?'
+                - 'Who is your favorite actor?'
+                - 'Who was your favorite teacher?'
+                - 'Name of favorite sports team?'
+                - 'What is your favorite movie?'
+                - 'What is your favorite country?'
+                - 'What is your favourite color?'
+    rate:
+        intervals:
+            - 2f
+            - 3f
+            - 5f
+            - 6f
+            - 6.75f
+            - 7f
+            - 7.50f
+            - 10f
+            - 12f
+            - 13.50f
+            - 14f
+            - 15f
+            - 20f
+            - 25f
+            - 27f
+            - 28f
+            - 40f
+            - 50f
+            - 100f
+            - 1000f
+    config:
+        network:
+            socket:
+                hosts:
+                    - hostname: pyrmtsmsgway
+                      port: 8770
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 60
+                    - hostname: brdrmtsmsgway
+                      port: 8770
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 60
+                    - hostname: awselbprodchrgapps.idt.net
+                      port: 9905
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: chrgapp
+                    - hostname: awselbprodsksvrxml.idt.net
+                      port: 9908
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: custcare
+                    - hostname: awselbprodsksvrxml.idt.net
+                      port: 9912
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: n2p
+                    - hostname: awselbprodcredrules.idt.net
+                      port: 9922
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: credrules
+                    - hostname: db01_sktest.debit.idt.net
+                      port: 9075
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: custcare
+                    - hostname: db01_chrgapptest.debit.idt.net
+                      port: 6513
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: chrgapp
+                    - hostname: imtu.ixtelecom.com
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                    - hostname: somgwy01.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostname: gateway.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostname: gwy.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostname: halgwy01.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostname: gatewayb.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+                    - hostname: gwyb.debit.idt.net
+                      port: 2500
+                      maxConnections: 10
+                      maxOverflow: 5
+                      maxIdelTime: 20
+                      tag: imtu
+custcare_debug_option: 0
+customercare:
+    documentation:
+        url: http://eando.ixtelecom.com/docs/CustomerCare/r1800/customer%20service%20guide.htm
+dbadm:
+    cfgdir: '/usr/local/tomcat/lib/dbadm'
+dbadm_pm_remote_shell_path: /usr/bin/ssh
+debit_datasources: Debit
+debit_dbs: debitdb06.debit.idt.net-debit2,debitdb06.debit.idt.net-debit4
+debit_fee_xls_archive_host: feeserver
+debit_fee_xls_archive_host_login: ftpdebitfee
+debit_fee_xls_archive_rootdir: /
+debit_reports_url: http://eando.ixtelecom.com/reports/cgi-bin/DebitReports
+default_expdate_days_mvno: 1
+dnisinv_ignore_bad_dnistype: N
+dnisinv_max_dnis_allocation_size: 50
+dnisinv_max_import_size: 1000
+dnisinv_max_qry_result_set_size: 3000
+dnl_service_timeout: 5000
+dnl_service_url: https://dnl.debit.idt.net:19501/v1/dnl
+dyndid_config_sendImsg_svcname: dynDidConfigSendImsgDistr
+emms_send_lac_topic: boss_seccode_lac
+emms_send_security_code_languages: English:en-US,Spanish:es-US,French Creole:fr-US,German:de-DE
+emms_send_security_code_prefix: '+ '
+emms_send_security_code_topic: boss_seccode_custcare
+emms_svr_url: http://emmsservice.idt.net/EMMS
+encrypt_credit_card: true
+expiration_ext_days: 273
+expiration_ext_percent: 25
+expiration_ext_window: 365
+feesratescomborpt_local_rsync_path: /usr/local/bin/rsync
+feesratescomborpt_output_dir(US): /nas/mars/us_rates/CombinedDecks
+feesratescomborpt_output_host(US): pyoanm02
+feesratescomborpt_output_host_rsync_path(US): /usr/local/bin/rsync
+feesratescomborpt_ratesvr: halrate01
+feesratescomborpt_ratesvr_rsync_path: /usr/local/bin/rsync
+feesratescomborpt_rsync_rsh_path: /bin/rsh
+first:
+    autorecharge:
+        campaign:
+            14072: 5000132
+force:
+    new:
+        security:
+            question: 'no'
+from_email: idt-debit@idt.net
+fulfillment_cfg_dir: '/usr/local/tomcat/lib/fulfillment'
+http_sk_svr_timeout: 5000
+http_sk_svr_url: http://httpsksvrxml.idt.net:9946/xmlreq/debitSkSvrXML
+http_spud_url: http://spud.debit.idt.net:9940
+http_udp_url: http://udprateservice.debit.idt.net:7500/udpRateService
+idt_screen_pop_service_url: https://psp-screenpop-service.aws.idt.net/screenpop/v1/calldata/did/{did}/ani/{ani}
+jmail:
+    cfgdir: '/usr/local/tomcat/lib/dbadm'
+lookupvalue_reasoncode_param: REASONCODES
+lookupvalue_resolutioncode_param: RESOLUTIONCODES
+max_autorechg_threshold: 50.0
+max_display_entries: 2000
+max_postpaid_creditlimit: 5000.0
+max_rows_per_dniscl_batch_add: 100
+max_trans_amount: 2000.0
+menu_path: '/usr/local/tomcat/lib/'
+min_autorechg_threshold: 3.0
+min_postpaid_creditlimit: 1.0
+min_trans_amount: 0.01
+mobileapp:
+    rs:
+        exclude_locations: -1, -19999908, -19999907, -19999906, -19999905  , -19999904, -19999903, -19999902, -19999901
+        override:
+            location:
+                country: 6700:TP:1,672001:NF:1
+mvno_data_rating_type: Rating Group 770, Rating Group 780, Rating Group 790, Rating Group 800, Rating Group 900
+mvno_sms_rating_type: INBOUND SMS, OUTBOUND SMS
+mvno_voice_rating_type: INBOUND CELL, INBOUND APP, INBOUND_WIFI, OUTBOUND CELL, OUTBOUND APP, OUTBOUND WIFI
+newRateSvr: true
+number_svr_url: http://pyweb03.ixtelecom.com/numberSvrApp/numsvr
+ocm_langmenu: en-US:UsOcmF-EngBwSecCode,es-US:SpanishOcm-SpnBwSecCode,fr-US:FrenchCanOcm-EngBwSecCode
+ocm_url: http://ocm.debit.idt.net:8840/OCM/BossRevRN
+oracfg: '/usr/local/tomcat/lib/dbadm/dbadm.properties'
+pm_send_email_on_update: N
+query_promos_back_days: 180
+questionsfile: '/usr/local/tomcat/lib/questions'
+rate_path: '/usr/local/tomcat/lib/UdpRateSvrData/Current/'
+rate_qry_tool_url: http://eando.idttechnology.com/prompts/cgi-bin/RateQuery
+rate_sample_interval_file: '/usr/local/tomcat/lib/rate_intervals'
+rateplan_svr_url: http://nwk-mvno-appvip.corp.idt.net/mvno/mvnoservice.asmx
+rc_import_max_records: 100
+rc_import_max_sheets: 20
+result_display_max: 500
+result_display_sizes: 25|50|75
+screenpop_script: http://debitapp11.debit.idt.net:8080/PSPScreenPopService/js/jsScreenPop.js
+screenpop_server: debitapp11.debit.idt.net:8080/PSPScreenPopService/
+sk_msgbodybuf_len: 1280
+sp_chargeapp_svr_host: chrgapp@awselbprodchrgapps.idt.net
+sp_config_file: '/usr/local/tomcat/lib/socketpool.config'
+sp_creditrules_svr_host: credrules@awselbprodcredrules.idt.net
+sp_custcare_svr_host: custcare@awselbprodsksvrxml.idt.net
+sp_imtu_svr_host: imtu@gatewayb.debit.idt.net
+sp_n2p_svr_host: n2p@awselbprodsksvrxml.idt.net
+sso_appid_ccrconfig: 11221
+sso_appid_chargeman: 7669
+sso_appid_custcare: 7450
+sso_appid_feesrates: 7570
+sso_appid_hubtransmon: 8637
+sso_appid_imtuconfig: 9281
+sso_appid_pintools: 7569
+sso_appid_progmgmt: 7451
+sso_login_url: https://app1.idt.net/mis/sso
+sso_return_param: ReturnURL
+sso_validate_url: http://nwk-appweb1.am.idtcorp.net/mis/security/appsecws/sso/SSOService.svc/tokens
+subpoena_query_batch_size: 200
+tokenizer:
+    url: https://paytokproxy.idt.net/IDTHandlers/JSHandler/JSScript.ashx?req=tokenizer
+tuyo_dollars_max_redemptions: 5/30
+unblock_ani_cmd: '/usr/local/tomcat/bin/ccUnblockAni'
+unlimited_msg_langs: English:en-US,Spanish:es-US,French Creole:ht-US,French:fr-US,Arabic:ar-US
+
+DisableDataThrottlingSoc: DATAFULL
+DisableSmsAction: A
+DnisReportTypesForMobileAppCellularData: adrCD,iosCD
+Employee:
+    DebitSkSvrXml:
+        Timeout: 300
+        Url: http://httpsksvrxml.idt.net:9946/xmlreq/debitSkSvrXML
+    Recharge:
+        Amount: 3500
+        Threshold: 500
+EnableDataThrottlingAction: A
+EnableSmsAction: D
+ListOfRatingGroupsSubjectToDataThrottling: 900
+LocalTimezone: US/Eastern
+MINBAL: 0.5
+MvnoNotifyBalanceUpdatedSoapUrl: http://awselbmvnobrocs.idt.net/NotifyBalanceUpdated/soap
+NotificationTemplateNameForReachingTier2: MVNO_TIER2_REACHED
+PRC:
+    charge: 100
+    cycle: 7
+    gracePeriod: 14
+    startDay: Monday
+    usageThreshold: 800
+PsfApiServiceConnectTimeoutSecs: 5
+PsfApiServiceRequestTimeoutSecs: 65
+PsfApiServiceSoapUrl: http://psfapp-vip-hal.idt.net/PSFMobileSVC/PSF.svc
+PsfCannedSuccess: Y
+PsfSimulationMode: false
+PspMvnoUnprocBalanceUpdNotifQ:
+    ConnectTimeoutSecs: ''
+    DelaySeconds: ''
+    MaxConnections: ''
+    MaxVisibilityTimeoutSeconds: ''
+    RequestTimeoutSecs: ''
+PspMvnoUnprocBalanceUpdNotifQName: PspMvnoUnprocBalanceUpdNotifs
+ReadyCreditControlGuid: a3595254-2c09-3abd-8ab6-278e6c3e05a7
+ReadyCreditControlUrl: https://api-cc.readywireless.com/ocs/v7/creditcontrol
+ReportingCodesForAirtime: 105
+ReportingCodesForILD: 100
+SOC_ACTIONS_2147483648: A:DATA512K,D:DATA32K,D:DATA64K,D:DATA128K,D:DATA256K
+SOC_ACTIONS_2684354560: A:DATA256K,D:DATA32K,D:DATA64K,D:DATA128K,D:DATA512K
+SOC_ACTIONS_3758096384: A:DATA64K,D:DATA32K,D:DATA128K,D:DATA256K,D:DATA512K
+SmsBlockSoc: SMSBLK
+Tier2ZeroRateSms: true
+
+
+AdvDefAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Adv Def {0} by User {1}
+    To: undefined@ixtelecom.com
+AdvDefDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Adv Def {0} by User {1}
+    To: undefined@ixtelecom.com
+AdvDefUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Adv Def {0} by User {1}
+    To: undefined@ixtelecom.com
+AdvNameAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Adv Name {0} by User {1}
+    To: app-ops@ixtelecom.com
+AdvNameDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Adv Name {0} by User {1}
+    To: app-ops@ixtelecom.com
+AdvNameUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Adv Name {0} by User {1}
+    To: undefined@ixtelecom.com
+AniDestinationSurchargeAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0}  by user {1}
+    To: undefined@ixtelecom.com
+AniDestinationSurchargeDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0}  by user {1}
+    To: undefined@ixtelecom.com
+AniDestinationSurchargeUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: 'Program Management '
+    Subject: Updated ANI/Destination Surcharge for ANI/DNIS/Destination/First Interval/SubsInterval {0} by user {1}
+    To: undefined@ixtelecom.com
+AniSurchargeCreditAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}
+    To: undefined@ixtelecom.com
+AniSurchargeCreditDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}
+    To: undefined@ixtelecom.com
+AniSurchargeCreditUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated ANI Surcharge for ANI/DNIS/First Interval/SubsInterval {0}  by User {1}
+    To: undefined@ixtelecom.com
+BalanceDeductionRulesAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Balance Deduction Rules for {0} by User {1}
+    To: undefined@ixtelecom.com
+BalanceDeductionRulesDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted All Balance Deduction Rules for {0} by User {1}
+    To: undefined@ixtelecom.com
+BalanceDeductionRulesUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Balance Deduction Rules for {0}  by User {1}
+    To: undefined@ixtelecom.com
+CalDataAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Cal Data {0} by User {1}
+    To: app-ops@ixtelecom.com
+CalDataDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Cal Data {0} by User {1}
+    To: app-ops@ixtelecom.com
+CalDataUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Cal Data {0} by User {1}
+    To: undefined@ixtelecom.com
+CallTypeClassAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Call Type Class {0} by User {1}
+    To: undefined@ixtelecom.com
+CallTypeClassCloned:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Cloned Call Type Class {0} by User {1}
+    To: undefined@ixtelecom.com
+CallTypeClassDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Call Type Class {0} by User {1}
+    To: undefined@ixtelecom.com
+CallTypeClassUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Call Type Class {0} by User {1}
+    To: undefined@ixtelecom.com
+CarrierGroupAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added CarrierGroup {0} by User {1}
+    To: app-ops@ixtelecom.com
+CarrierGroupDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted CarrierGroup {0} by User {1}
+    To: app-ops@ixtelecom.com
+CarrierGroupUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated CarrierGroup {0} by User {1}
+    To: undefined@ixtelecom.com
+CcRespActionAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}
+    To: undefined@ixtelecom.com
+CcRespActionDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}
+    To: undefined@ixtelecom.com
+CcRespActionUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated CcRespAction for {0}/{1}/{2} (Id/Response/CcType) by User {3}
+    To: undefined@ixtelecom.com
+ChgHistRptFinished:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: 'ChgHistRpt {0} between: {1} - {2}'
+    To: defined_via_mailto_command_line_argument
+ClassFeeTypeAdded:
+    FromAddress: eoweb@ixtelecom.com
+    FromName: Program Management
+    Subject: Added {0} fee for {1} by user {2}
+    To: undefined@ixtelecom.com
+ClassFeeTypeDeleted:
+    FromAddress: eoweb@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted {0} fee for {1}  by user {2}
+    To: undefined@ixtelecom.com
+ClassFeeTypeUpdated:
+    FromAddress: eoweb@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated {0} fee for {1}  by user {2}
+    To: undefined@ixtelecom.com
+ClassGroupDataAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Class Group member {0}(groupid/classid) by Use
+    To: undefined@ixtelecom.com
+ClassGroupDataDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Class Group member {0} (groupid/classid) b
+    To: undefined@ixtelecom.com
+ClassGroupDataUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Class Group member {0} (groupid/classid) b
+    To: undefined@ixtelecom.com
+ClassGroupInfoAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Class Group {0} by User {1}
+    To: undefined@ixtelecom.com
+ClassGroupInfoDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Class Group {0} by User {1}
+    To: undefined@ixtelecom.com
+ClassGroupInfoUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Class Group {0} by User {1}
+    To: undefined@ixtelecom.com
+ClassUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated Class {0} by user {1}
+    To: SEEcc_rpt_email_listTABLE@oracle
+DenomDefAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added DenomDef for {0}/{1} (Id/Denom) by User {2}
+    To: undefined@ixtelecom.com
+DenomDefDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted DenomDef for {0}/{1} (Id/Denom) by User {2}
+    To: undefined@ixtelecom.com
+DenomDefUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated DenomDef for {0}/{1} (Id/Denom) by User {2}
+    To: undefined@ixtelecom.com
+DestBasedFeesUploaded:
+    FromAddress: program-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Uploaded dest based {0} fees for {1} by User {2}
+    To: undefined@ixtelecom.com
+DnisClassAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisClassBatchUpdated:
+    FromAddress: undefine@ixtelecom.com
+    FromName: Program Management
+    Subject: Batch Updated {0} DNIS/Class by User {1}
+    To: undefined@ixtelecom.com
+DnisClassDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisClassUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisInventoryBatchDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Sucessfully Deleted {0} DNIS(es) from DNIS Inventory Partition ({1}) by User {2} {3}.
+    To: undefined@ixtelecom.com
+DnisInventoryImported:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Successfully Imported {0} DNIS(es) to DNIS Inventory Partition ({1}) by User {2}.
+    To: undefined@ixtelecom.com
+DnisInventoryUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated Dnis Inventory Record for {0}  by User {1}
+    To: undefined@ixtelecom.com
+DnisSurchargeAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added Dnis Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisSurchargeDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted Dnis Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisSurchargeUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated Dnis Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+DnisUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated DNIS {0} by user {1}
+    To: SEEcc_rpt_email_listTABLE@oracle
+NewClassAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: 'New Class cid {0} Added '
+    To: eu-retail-ops@idteurope.com,debit-ops@corp.idt.net
+PaymasterAlert:
+    FromAddress: compliance@idt.net
+    FromName: Paymaster Compliance
+    Subject: '{0} alert for {1} ({2})'
+    To: eando-qa@ixtelecom.com
+PayphoneSurchargeAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added {2} Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+PayphoneSurchargeDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted {2} Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+PayphoneSurchargeUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated {2} Surcharge for DNIS/Class/First Interval/Subs Interval {0} by User {1}
+    To: undefined@ixtelecom.com
+PercallSurchargeAdded:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Added {2} Surcharge for DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+PercallSurchargeDeleted:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Deleted {2} Surcharge for DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+PercallSurchargeUpdated:
+    FromAddress: eoweb@idttechnology.com
+    FromName: Program Management
+    Subject: Updated {2} Surcharge for DNIS/Class {0} by User {1}
+    To: undefined@ixtelecom.com
+PromoDefAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Promo Def {0} by User {1}
+    To: undefined@ixtelecom.com
+PromoDefDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Promo Def {0} by User {1}
+    To: undefined@ixtelecom.com
+PromoDefUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Promo Def {0} by User {1}
+    To: undefined@ixtelecom.com
+PromoIdMapAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Promo Id Map {0} by User {1}
+    To: undefined@ixtelecom.com
+PromoIdMapDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Promo Id Map {0} by User {1}
+    To: undefined@ixtelecom.com
+PrsDidActivated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Activated PRS DID {0} (DID/Dialed DID/Class) by user {1}
+    To: undefined@ixtelecom.com
+PrsDidDisconnected:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Disconnected PRS DID {0} (DID/Dialed DID/Class) by user {1}
+    To: undefined@ixtelecom.com
+PrsDidUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated PRS DID {0} (DID/Dialed DID/Class) by user {1}
+    To: undefined@ixtelecom.com
+RechgPolicyDefAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added RechgPolicyDef {0} by User {1}
+    To: undefined@ixtelecom.com
+RechgPolicyDefDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted RechgPolicyDef {0} by User {1}
+    To: undefined@ixtelecom.com
+RechgPolicyDefUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated RechgPolicyDef {0} by User {1}
+    To: undefined@ixtelecom.com
+RemittanceReceipt:
+    FromAddress: no-reply@idt.net
+    FromName: IDTSend
+    Subject: IDTSend Remittance Receipt
+ShortCodeAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Short Code {0}/{1} (SdcId/SdcCode) by User {2}
+    To: undefined@ixtelecom.com
+ShortCodeDeleted:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Deleted Short Code {0}/{1} (SdcId/SdcCode) by User {2}
+    To: undefined@ixtelecom.com
+ShortCodeUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Short Code {0}/{1} (SdcId/SdcCode) by User {2}
+    To: undefined@ixtelecom.com
+SvcExpChgAdded:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Added Service/Inactive Charge & Expiration Policy Record for class {0} by User {1}
+    To: undefined@ixtelecom.com
+SvcExpChgUpdated:
+    FromAddress: app-ops@ixtelecom.com
+    FromName: Program Management
+    Subject: Updated Service/Inactive Charge & Expiration Policy Record for class {0} by User {1}
+    To: undefined@ixtelecom.com
+UnlimitedDestUploaded:
+    FromAddress: undefine@ixtelecom.com
+    FromName: Program Management
+    Subject: Uploaded unlimited calling destinations to set ({0}) by User {1}
+    To: undefined@ixtelecom.com
+mail:
+    smtp:
+        host: smtp-aws.corp.idt.net
+r: '{1}'
+y: User {1}
+
+csa:
+  cors:
+    allowed:
+      origins:
+        - 'http://rc-custcare.idt.net'
+        - 'http://localhost:3000'
+
