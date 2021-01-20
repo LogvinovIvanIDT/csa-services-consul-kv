@@ -767,6 +767,5 @@ csa:
   cors:
     allowed:
       origins:
-        - 'http://rc-custcare.idt.net'
-        - 'http://rc-customercare.idt.net'
+        - 'http://rc-custcare.aws.idt.net'
 
