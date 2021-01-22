@@ -1,3 +1,4 @@
 {
-  "AllowedHosts": "*"
+  "AllowedHosts": "*",
+  "HealthChecksBaseUrl": "http://localhost:5000/health"
 }
