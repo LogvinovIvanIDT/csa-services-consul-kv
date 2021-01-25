@@ -1,1 +1,26 @@
-csa.customercare.service.consul.health.message: The application was connected to Consul successfully
+custrcare:
+  service:
+    consul:
+      health:
+        message: The application was connected to Consul successfully
+  cors:
+    allowed:
+      origins: - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
+               - 'http://localhost:3000'
+  jwt:
+    expiration:
+      period:
+        minutes: 60
+  sso:
+    http:
+      timeout:
+        seconds: 60
+    login:
+      url: 'http://lwebdev02.ixtelecom.com/sso/cgi-bin/SSODevSimulator.pl'
+    return_param: redirectTo
+    app:
+      id: 27242
+jwt:
+    cache:
+      timeout:
+        minutes: 120
