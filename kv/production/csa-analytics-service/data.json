@@ -1,0 +1,15 @@
+best:
+  offer:
+    job:
+      initial:
+        delay: 10000
+      fixed:
+        rate: 1800000
+customer:
+    value:
+      indicator:
+        job:
+          initial:
+            delay: 900000
+          fixed:
+            rate: 1800000
