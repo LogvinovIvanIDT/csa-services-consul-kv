@@ -1,4 +1,4 @@
-custrcare:
+custcare:
   service:
     consul:
       health:
