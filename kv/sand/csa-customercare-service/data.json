@@ -11,6 +11,9 @@ custcare:
     expiration:
       period:
         minutes: 60
+    cache:
+      timeout:
+        minutes: 120
   sso:
     http:
       timeout:
@@ -20,7 +23,6 @@ custcare:
     return_param: redirectTo
     app:
       id: 27242
-jwt:
-    cache:
-      timeout:
-        minutes: 120
+  psf:
+    soap:
+      endpoint: 'http://psfoneapp.awsqa.idt.net/PSF.svc'
