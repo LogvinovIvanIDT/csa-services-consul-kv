@@ -72,6 +72,7 @@ custcare:
             text: text.xsl
             email: support@bossrevolution.com
             attachment_0: logo.jpe
+        directory: /usr/local/tomcat/lib/fulfillment
     subscriber:
         manager:
             questions:
