@@ -5,8 +5,9 @@ custcare:
         message: The application was connected to Consul successfully
   cors:
     allowed:
-      origins: - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
-               - 'http://localhost:3000'
+      origins:
+        - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
+        - 'http://localhost:3000'
   jwt:
     expiration:
       period:
@@ -20,7 +21,8 @@ custcare:
         seconds: 60
     login:
       url: 'http://lwebdev02.ixtelecom.com/sso/cgi-bin/SSODevSimulator.pl'
-    return_param: redirectTo
+    param:
+      return: redirectTo
     app:
       id: 27242
   psf:
