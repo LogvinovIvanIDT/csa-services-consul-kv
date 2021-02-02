@@ -710,3 +710,55 @@ csa:
       origins:
         - 'http://csa-qa-customercare-react-app.qa.aws.idt.net'
         - 'http://localhost:3000'
+
+
+customercare:
+  datasource:
+    debit:
+      enabled:
+        true
+customercare:
+  datasource:
+    debit:
+      url:
+        'jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dbtdev1.chukdnmprvkk.us-east-1.rds.amazonaws.com)(port=1521))(connect_data=(service_name=dbtdev1)))'
+customercare:
+  datasource:
+    debit:
+      driver:
+        'oracle.jdbc.OracleDriver'
+
+customercare:
+  datasource:
+    debit:
+      admin:
+        enabled:
+          true
+customercare:
+  datasource:
+    debit:
+      admin:
+        url:
+          'jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dbtdev1.chukdnmprvkk.us-east-1.rds.amazonaws.com)(port=1521))(connect_data=(service_name=dbtdev1)))'
+customercare:
+  datasource:
+    debit:
+      admin:
+        driver:
+          'oracle.jdbc.OracleDriver'
+
+customercare:
+  datasource:
+    mvno:
+      enabled:
+        true
+customercare:
+  datasource:
+    mvno:
+      url:
+        'jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dbtdev1.chukdnmprvkk.us-east-1.rds.amazonaws.com)(port=1521))(connect_data=(service_name=dbtdev1)))'
+customercare:
+  datasource:
+    mvno:
+      driver:
+        'oracle.jdbc.OracleDriver'
