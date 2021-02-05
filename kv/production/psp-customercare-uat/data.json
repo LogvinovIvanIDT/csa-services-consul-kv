@@ -28,6 +28,7 @@ UnknownTransaction[N,W]: Deposit Wire
 UnknownTransaction[N,X]: ARAP Offset
 UnknownTransaction[N,Z]: Rebate DBP
 account_attribute_svc_rest_url: https://employee-plan-uat.aws.idt.net
+account_attribute_svc_rest_timeout: 20000
 account_attribute_svc_rest_url_path:
     diff_template: /employee-plan/account-diff/@ATTRIBUTE@/@CLASS_ID@
     export_template: /employee-plan/account-export/@ATTRIBUTE@/@CLASS_ID@
